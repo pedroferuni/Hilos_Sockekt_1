@@ -15,7 +15,7 @@ public class PracticaSocketClienteHilo{
 		
 			//Creamos el socket				 
 			      Socket socket = new Socket("localhost", 9999);
-			      System.out.println("H Historia\nG Geografia\nZ Zoologia\nB Biologia\nA Antropologia\nq salir");
+			      System.out.println("H-Historia\nG-Geografia\nZ-Zoologia\nB-Biologia\nA-Antropologia\nq-salir");
 			    while(true) {
 					
 				 	 String mensaje = System.console().readLine("Introduce una eleccion\n");

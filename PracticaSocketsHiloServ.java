@@ -48,20 +48,15 @@ public class PracticaSocketsHiloServ implements Runnable{
 		try {
 			PrintWriter outserver = new PrintWriter(clienteSocket.getOutputStream(), true);
 			BufferedReader inServer = new BufferedReader (new InputStreamReader(clienteSocket.getInputStream()));			
-			//outserver.println("Sobre que te apeteceria hablar");			
-				
 		
 			while((InputLine =inServer.readLine()) != null) 
 			{
-					
-				
-				System.out.println("Llego esto "+ InputLine);
-				if  (InputLine.equals("H")) 
+			
+     		if  (InputLine.equals("H")) 
 		        {
 					  
-					outserver.println("La historia​ es la narración de los sucesos del pasado\ngeneralmente los de la humanidad,aunque,también puede no estar centrada en el humano.Hay quien más breve y concisamente afirma que la historia es el conocimiento del pasado humano. \n​ Asimismo, es una disciplina académica que estudia dichos acontecimientos.");
-					 				  
-					  
+					outserver.println("La historia​ es la narración de los sucesos del pasado generalmente los de la humanidad,aunque,también puede no estar centrada en el humano.Hay quien más breve y concisamente afirma que la historia es el conocimiento del pasado humano.​ Asimismo, es una disciplina académica que estudia dichos acontecimientos.");
+		  
 		        }
 				else if  (InputLine.equals("G")) 
 		        {
